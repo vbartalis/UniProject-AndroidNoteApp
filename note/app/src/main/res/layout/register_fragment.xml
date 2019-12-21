@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.note.ui.register.RegisterViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.register.RegisterFragment">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:id="@+id/text_view_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/register"
+            app:layout_constraintBottom_toTopOf="@+id/edit_text_register_name"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_register_name"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_register_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/edit_text_register_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/user_name"
+            android:inputType=""
+            app:layout_constraintBottom_toTopOf="@+id/edit_text_register_pwd1"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_register_pwd1"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_register_pwd1"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_register" />
+
+        <EditText
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/edit_text_register_pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/edit_text_register_pwd2"
+            app:layout_constraintEnd_toEndOf="@+id/edit_text_register_pwd2"
+            app:layout_constraintStart_toStartOf="@+id/edit_text_register_pwd2"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_register_name" />
+
+        <EditText
+            style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/edit_text_register_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/button_register"
+            app:layout_constraintEnd_toEndOf="@+id/button_register"
+            app:layout_constraintStart_toStartOf="@+id/button_register"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_register_pwd1" />
+
+        <Button style="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_text_register_pwd2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
