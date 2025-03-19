@@ -1,6 +1,6 @@
-# androidNoteApp
+# AndroidNoteApp
 
-**androidNoteApp** is a simple note-taking application built for Android using **Kotlin**. The app allows users to create and manage notes with an intuitive interface.
+**AndroidNoteApp** is a simple note-taking application built for Android using **Kotlin**. The app allows users to create and manage notes with an intuitive interface.
 
 ### Technologies Used
 
